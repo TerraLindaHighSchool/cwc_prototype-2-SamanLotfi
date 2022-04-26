@@ -7,17 +7,17 @@ public class DetectCollisions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
-    void OnTriggerEnter(Collider other)
+    }
+    private void OnTriggerEnter(Collider other)
     {
+        //Destroys object when touched
         Destroy(gameObject);
         Destroy(other.gameObject);
     }
